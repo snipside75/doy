@@ -1,0 +1,11 @@
+<a [routerLink]="[challengeId]" class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{challenge.name}}</h4>
+    <p class="list-group-item-text">{{challenge.description}}</p>
+  </div>
+  <span class="pull-right">
+    <img class="img-responsive"
+         src="{{challenge.imagePath}}"
+         style="..."/>
+  </span>
+</a>

@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12">
+    <a class="btn btn-success" [routerLink]="['new']">New Challenge</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <!--todo loop, [] from ch-item pass ch from ch-list-->
+      <app-challenge-item *ngFor="let challenge of challenges; let i = index" [challenge]="challenge" [challengeId]="i"></app-challenge-item>
+    </ul>
+  </div>
+</div>
